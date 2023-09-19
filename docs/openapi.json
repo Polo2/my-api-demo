@@ -12,15 +12,15 @@
     }
   ],
   "paths": {
-    "/greetings": {
+    "/books": {
       "get": {
-        "operationId": "api_greetings_get_collection",
+        "operationId": "api_books_get_collection",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "200": {
-            "description": "Greeting collection",
+            "description": "Book collection",
             "content": {
               "application/ld+json": {
                 "schema": {
@@ -29,7 +29,7 @@
                     "hydra:member": {
                       "type": "array",
                       "items": {
-                        "$ref": "#/components/schemas/Greeting.jsonld"
+                        "$ref": "#/components/schemas/Book.jsonld"
                       }
                     },
                     "hydra:totalItems": {
@@ -117,7 +117,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Greeting"
+                    "$ref": "#/components/schemas/Book"
                   }
                 }
               },
@@ -125,15 +125,15 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Greeting"
+                    "$ref": "#/components/schemas/Book"
                   }
                 }
               }
             }
           }
         },
-        "summary": "Retrieves the collection of Greeting resources.",
-        "description": "Retrieves the collection of Greeting resources.",
+        "summary": "Retrieves the collection of Book resources.",
+        "description": "Retrieves the collection of Book resources.",
         "parameters": [
           {
             "name": "page",
@@ -154,27 +154,27 @@
         "deprecated": false
       },
       "post": {
-        "operationId": "api_greetings_post",
+        "operationId": "api_books_post",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "201": {
-            "description": "Greeting resource created",
+            "description": "Book resource created",
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting.jsonld"
+                  "$ref": "#/components/schemas/Book.jsonld"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               },
               "text/html": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               }
             },
@@ -187,25 +187,25 @@
             "description": "Unprocessable entity"
           }
         },
-        "summary": "Creates a Greeting resource.",
-        "description": "Creates a Greeting resource.",
+        "summary": "Creates a Book resource.",
+        "description": "Creates a Book resource.",
         "parameters": [],
         "requestBody": {
-          "description": "The new Greeting resource",
+          "description": "The new Book resource",
           "content": {
             "application/ld+json": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting.jsonld"
+                "$ref": "#/components/schemas/Book.jsonld"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting"
+                "$ref": "#/components/schemas/Book"
               }
             },
             "text/html": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting"
+                "$ref": "#/components/schemas/Book"
               }
             }
           },
@@ -215,29 +215,29 @@
       },
       "parameters": []
     },
-    "/greetings/{id}": {
+    "/books/{id}": {
       "get": {
-        "operationId": "api_greetings_id_get",
+        "operationId": "api_books_id_get",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "200": {
-            "description": "Greeting resource",
+            "description": "Book resource",
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting.jsonld"
+                  "$ref": "#/components/schemas/Book.jsonld"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               },
               "text/html": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               }
             }
@@ -246,13 +246,13 @@
             "description": "Resource not found"
           }
         },
-        "summary": "Retrieves a Greeting resource.",
-        "description": "Retrieves a Greeting resource.",
+        "summary": "Retrieves a Book resource.",
+        "description": "Retrieves a Book resource.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Greeting identifier",
+            "description": "Book identifier",
             "required": true,
             "deprecated": false,
             "allowEmptyValue": false,
@@ -267,27 +267,27 @@
         "deprecated": false
       },
       "put": {
-        "operationId": "api_greetings_id_put",
+        "operationId": "api_books_id_put",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "200": {
-            "description": "Greeting resource updated",
+            "description": "Book resource updated",
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting.jsonld"
+                  "$ref": "#/components/schemas/Book.jsonld"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               },
               "text/html": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               }
             },
@@ -303,13 +303,13 @@
             "description": "Unprocessable entity"
           }
         },
-        "summary": "Replaces the Greeting resource.",
-        "description": "Replaces the Greeting resource.",
+        "summary": "Replaces the Book resource.",
+        "description": "Replaces the Book resource.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Greeting identifier",
+            "description": "Book identifier",
             "required": true,
             "deprecated": false,
             "allowEmptyValue": false,
@@ -322,21 +322,21 @@
           }
         ],
         "requestBody": {
-          "description": "The updated Greeting resource",
+          "description": "The updated Book resource",
           "content": {
             "application/ld+json": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting.jsonld"
+                "$ref": "#/components/schemas/Book.jsonld"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting"
+                "$ref": "#/components/schemas/Book"
               }
             },
             "text/html": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting"
+                "$ref": "#/components/schemas/Book"
               }
             }
           },
@@ -345,25 +345,25 @@
         "deprecated": false
       },
       "delete": {
-        "operationId": "api_greetings_id_delete",
+        "operationId": "api_books_id_delete",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "204": {
-            "description": "Greeting resource deleted"
+            "description": "Book resource deleted"
           },
           "404": {
             "description": "Resource not found"
           }
         },
-        "summary": "Removes the Greeting resource.",
-        "description": "Removes the Greeting resource.",
+        "summary": "Removes the Book resource.",
+        "description": "Removes the Book resource.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Greeting identifier",
+            "description": "Book identifier",
             "required": true,
             "deprecated": false,
             "allowEmptyValue": false,
@@ -378,27 +378,27 @@
         "deprecated": false
       },
       "patch": {
-        "operationId": "api_greetings_id_patch",
+        "operationId": "api_books_id_patch",
         "tags": [
-          "Greeting"
+          "Book"
         ],
         "responses": {
           "200": {
-            "description": "Greeting resource updated",
+            "description": "Book resource updated",
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting.jsonld"
+                  "$ref": "#/components/schemas/Book.jsonld"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               },
               "text/html": {
                 "schema": {
-                  "$ref": "#/components/schemas/Greeting"
+                  "$ref": "#/components/schemas/Book"
                 }
               }
             },
@@ -414,13 +414,13 @@
             "description": "Unprocessable entity"
           }
         },
-        "summary": "Updates the Greeting resource.",
-        "description": "Updates the Greeting resource.",
+        "summary": "Updates the Book resource.",
+        "description": "Updates the Book resource.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "Greeting identifier",
+            "description": "Book identifier",
             "required": true,
             "deprecated": false,
             "allowEmptyValue": false,
@@ -433,11 +433,11 @@
           }
         ],
         "requestBody": {
-          "description": "The updated Greeting resource",
+          "description": "The updated Book resource",
           "content": {
             "application/merge-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/Greeting"
+                "$ref": "#/components/schemas/Book"
               }
             }
           },
@@ -450,26 +450,39 @@
   },
   "components": {
     "schemas": {
-      "Greeting": {
+      "Book": {
         "type": "object",
-        "description": "This is a dummy entity. Remove it!",
+        "description": "A book.",
         "deprecated": false,
         "properties": {
           "id": {
             "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "nullable": true
           },
-          "name": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
             "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "publicationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
-        },
-        "required": [
-          "name"
-        ]
+        }
       },
-      "Greeting.jsonld": {
+      "Book.jsonld": {
         "type": "object",
-        "description": "This is a dummy entity. Remove it!",
+        "description": "A book.",
         "deprecated": false,
         "properties": {
           "@context": {
@@ -509,15 +522,28 @@
           },
           "id": {
             "readOnly": true,
-            "type": "integer"
+            "type": "integer",
+            "nullable": true
           },
-          "name": {
+          "isbn": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
             "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "publicationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
-        },
-        "required": [
-          "name"
-        ]
+        }
       }
     },
     "responses": {},
