@@ -19,6 +19,12 @@ class Book
     public string $author = '';
     /** The publication date of this book. */
     public ?\DateTimeImmutable $publicationDate = null;
+    /** @var Review[] Available reviews for this book. */
+    public iterable $reviews;
+    public function __construct()
+    {
+        $this->reviews = new ArrayCollection();
+    }
     public function getId(): ?int
     {
         return $this->id;
