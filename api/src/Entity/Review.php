@@ -2,10 +2,24 @@
 // api/src/Entity/Review.php
 namespace App\Entity;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\Put;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Post;
+use ApiPlatform\Metadata\Patch;
 use Doctrine\ORM\Mapping as ORM;
 /** A review of a book. */
 #[ORM\Entity]
-#[ApiResource]
+#[ApiResource(
+    operations: [
+        new Get(),
+        new Put(),
+        new GetCollection(),
+        new Post(),
+        new Patch(),
+    ]
+)]
+
 class Review
 {
     /** The ID of this review. */

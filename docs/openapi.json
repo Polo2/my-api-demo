@@ -377,74 +377,6 @@
         ],
         "deprecated": false
       },
-      "patch": {
-        "operationId": "api_books_id_patch",
-        "tags": [
-          "Book"
-        ],
-        "responses": {
-          "200": {
-            "description": "Book resource updated",
-            "content": {
-              "application/ld+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Book.jsonld"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Book"
-                }
-              },
-              "text/html": {
-                "schema": {
-                  "$ref": "#/components/schemas/Book"
-                }
-              }
-            },
-            "links": {}
-          },
-          "400": {
-            "description": "Invalid input"
-          },
-          "404": {
-            "description": "Resource not found"
-          },
-          "422": {
-            "description": "Unprocessable entity"
-          }
-        },
-        "summary": "Updates the Book resource.",
-        "description": "Updates the Book resource.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Book identifier",
-            "required": true,
-            "deprecated": false,
-            "allowEmptyValue": false,
-            "schema": {
-              "type": "string"
-            },
-            "style": "simple",
-            "explode": false,
-            "allowReserved": false
-          }
-        ],
-        "requestBody": {
-          "description": "The updated Book resource",
-          "content": {
-            "application/merge-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Book"
-              }
-            }
-          },
-          "required": true
-        },
-        "deprecated": false
-      },
       "parameters": []
     },
     "/reviews": {
@@ -777,39 +709,6 @@
           },
           "required": true
         },
-        "deprecated": false
-      },
-      "delete": {
-        "operationId": "api_reviews_id_delete",
-        "tags": [
-          "Review"
-        ],
-        "responses": {
-          "204": {
-            "description": "Review resource deleted"
-          },
-          "404": {
-            "description": "Resource not found"
-          }
-        },
-        "summary": "Removes the Review resource.",
-        "description": "Removes the Review resource.",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Review identifier",
-            "required": true,
-            "deprecated": false,
-            "allowEmptyValue": false,
-            "schema": {
-              "type": "string"
-            },
-            "style": "simple",
-            "explode": false,
-            "allowReserved": false
-          }
-        ],
         "deprecated": false
       },
       "patch": {

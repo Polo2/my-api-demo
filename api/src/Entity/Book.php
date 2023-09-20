@@ -2,11 +2,25 @@
 // api/src/Entity/Book.php
 namespace App\Entity;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\Put;
+use ApiPlatform\Metadata\Delete;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Post;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 /** A book. */
 #[ORM\Entity]
-#[ApiResource]
+#[ApiResource(
+    operations: [
+        new Get(),
+        new Put(),
+        new Delete(),
+        new GetCollection(),
+        new Post(),
+    ]
+)]
+
 class Book
 {
      /** The ID of this book. */
