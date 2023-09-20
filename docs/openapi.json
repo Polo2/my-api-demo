@@ -892,8 +892,7 @@
         "properties": {
           "id": {
             "readOnly": true,
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "isbn": {
             "type": "string",
@@ -910,11 +909,14 @@
           },
           "publicationDate": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "reviews": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "iri-reference"
+            }
           }
         }
       },
@@ -960,8 +962,7 @@
           },
           "id": {
             "readOnly": true,
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "isbn": {
             "type": "string",
@@ -978,11 +979,14 @@
           },
           "publicationDate": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "reviews": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "iri-reference"
+            }
           }
         }
       },
@@ -993,8 +997,7 @@
         "properties": {
           "id": {
             "readOnly": true,
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "rating": {
             "type": "integer"
@@ -1007,8 +1010,7 @@
           },
           "publicationDate": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "book": {
             "type": "string",
@@ -1059,8 +1061,7 @@
           },
           "id": {
             "readOnly": true,
-            "type": "integer",
-            "nullable": true
+            "type": "integer"
           },
           "rating": {
             "type": "integer"
@@ -1073,8 +1074,7 @@
           },
           "publicationDate": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "book": {
             "type": "string",
