@@ -1,6 +1,9 @@
 api_platform:
     title: Hello API Platform
     version: 1.0.0
+    description: |
+      This documentation is generated from API Platform, GitHub action
+      connected to this repo: https://github.com/Polo2/my-api-demo
     # Mercure integration, remove if unwanted
     mercure: ~
     # Good defaults for REST APIs
