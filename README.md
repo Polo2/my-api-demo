@@ -22,6 +22,18 @@ and [Kubernetes](https://api-platform.com/docs/deployment/kubernetes).
 [![GitHub Actions](https://github.com/api-platform/core/workflows/CI/badge.svg)](https://github.com/api-platform/core/actions?workflow=CI)
 [![Codecov](https://codecov.io/gh/api-platform/core/branch/master/graph/badge.svg)](https://codecov.io/gh/api-platform/core/branch/master)
 
+## About Bump.sh
+
+[![Bump.sh](https://bump.sh/packs/static/552d538eeb0cd5a2aed3.svg)](https://bump.sh)
+
+This repo has been adapted for ApiPlatform 2023 conference, to provide a live example
+About how API changelog could easily built with [Bump.sh](https://bump.sh).
+
+API documentation demo is available here:
+https://bump.sh/demo/doc/apiplatform-test-demo
+
+## More about ApiPlatform
+
 The official project documentation is available **[on the API Platform website](https://api-platform.com)**.
 
 API Platform embraces open web standards and the
