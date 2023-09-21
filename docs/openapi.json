@@ -296,11 +296,11 @@
           "400": {
             "description": "Invalid input"
           },
-          "404": {
-            "description": "Resource not found"
-          },
           "422": {
             "description": "Unprocessable entity"
+          },
+          "404": {
+            "description": "Resource not found"
           }
         },
         "summary": "Replaces the Book resource.",
@@ -663,11 +663,11 @@
           "400": {
             "description": "Invalid input"
           },
-          "404": {
-            "description": "Resource not found"
-          },
           "422": {
             "description": "Unprocessable entity"
+          },
+          "404": {
+            "description": "Resource not found"
           }
         },
         "summary": "Replaces the Review resource.",
@@ -741,11 +741,11 @@
           "400": {
             "description": "Invalid input"
           },
-          "404": {
-            "description": "Resource not found"
-          },
           "422": {
             "description": "Unprocessable entity"
+          },
+          "404": {
+            "description": "Resource not found"
           }
         },
         "summary": "Updates the Review resource.",
