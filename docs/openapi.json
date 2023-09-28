@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
         "title": "Hello API Platform",
-        "description": "This documentation is generated from API Platform, GitHub action\nconnected to this repo: https://github.com/Polo2/my-api-demo",
+        "description": "This documentation is generated from API Platform, via GitHub action\nconnected to this repo: https://github.com/bump-sh/Api-Platform-Demo.\nMore details about integration between Bump.sh and ApiPlatform [here](https://github.com/bump-sh/Api-Platform-Demo/blob/main/README.md#about-bumpsh) and [here](https://docs.bump.sh/help/getting-started/api-platform/).\n\nHappy changelog \ud83d\udc99",
         "version": "1.0.0"
     },
     "servers": [

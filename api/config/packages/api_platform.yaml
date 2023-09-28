@@ -2,8 +2,12 @@ api_platform:
     title: Hello API Platform
     version: 1.0.0
     description: |
-      This documentation is generated from API Platform, GitHub action
-      connected to this repo: https://github.com/Polo2/my-api-demo
+      This documentation is generated from API Platform, via GitHub action
+      connected to this repo: https://github.com/bump-sh/Api-Platform-Demo.
+      More details about integration between Bump.sh and ApiPlatform [here](https://github.com/bump-sh/Api-Platform-Demo/blob/main/README.md#about-bumpsh) and [here](https://docs.bump.sh/help/getting-started/api-platform/).
+
+      Happy changelog 💙
+
     # Mercure integration, remove if unwanted
     mercure: ~
     # Good defaults for REST APIs
