@@ -26,28 +26,28 @@ and [Kubernetes](https://api-platform.com/docs/deployment/kubernetes).
 
 [![Bump.sh](https://bump.sh/packs/static/552d538eeb0cd5a2aed3.svg)](https://bump.sh)
 
-This repo has been adapted for ApiPlatform 2023 conference, to provide a live example
-about how API changelog could easily built with [Bump.sh](https://bump.sh).
+This repo has been adapted for API Platform 2023 conference, to provide a live example
+of how an API changelog can easily built with [Bump.sh](https://bump.sh).
 
-API documentation demo is available here:
+The API documentation demo is available here:
 https://bump.sh/demo/doc/apiplatform-test-demo
 
-API changelog follows the API contract, ie the OpenAPI specification.
-Thus, it's necessary to persist OpenAPI contract during API lifecycle.
+The API changelog follows the API contract, i.e., the OpenAPI specification.
+Thus, persisting the OpenAPI contract during the API lifecycle is necessary.
 
-We're sure there are many ways to do it, this repo implement an example,
-based on ApiPlatform command `api:openapi:export`, and a GitHub action.
+We're sure there are many ways to do it; this repo implements an example,
+based on API Platform command `api:openapi:export`, and a GitHub action.
 
-1. Initialize OpenAPI specification on given path (here, 'docs/openapi.json'), by running `php bin/console api:openapi:export > docs/openapi.json` (in this repo, you can also run `bash docs/persist.sh`)
+1. Initialize OpenAPI specification on a given path (here, 'docs/openapi.json') by running `php bin/console api:openapi:export > docs/openapi.json` (in this repo, you can also run `bash docs/persist.sh`)
 2. Create API documentation on Bump.sh.
 3. On Bump.sh 'CI deployments' page, get API slug and token. We suggest to copy-paste GitHub action script into a new workflow (that's what we did on .github/workflows/bump.yml).
 4. Back on ApiPlatform, each time you change your API contract, persist changes in OpenAPI contact, by running `bash docs/persist.sh`
-5. On GitHub, for each deployment on a branch (new branch, or new commit, or even push --force), update OpenAPI contract too. Thus, BumP.sh add comment in PR each time a structure change is detected (for example: https://github.com/bump-sh/Api-Platform-Demo/pull/9#issuecomment-1728142508 )
-6. By merging your branch on GitHub, you API documentation is also updated. And structure change is added to [API changelog](https://bump.sh/demo/doc/apiplatform-test-demo/changes)
+5. On GitHub, for each deployment on a branch (new branch, new commit, or even push --force), update the OpenAPI contract, too. Thus, Bump.sh adds a comment in PR each time a structure change is detected (for example https://github.com/bump-sh/Api-Platform-Demo/pull/9#issuecomment-1728142508 )
+6. By merging your branch on GitHub, your API documentation is also updated. And structure change is added to [API changelog](https://bump.sh/demo/doc/apiplatform-test-demo/changes)
 
 Find more details about how to connect Bump.sh and ApiPlatform in our [getting started guides](https://docs.bump.sh/help/getting-started/api-platform/)
 
-## More about ApiPlatform
+## More about API Platform
 
 The official project documentation is available **[on the API Platform website](https://api-platform.com)**.
 
