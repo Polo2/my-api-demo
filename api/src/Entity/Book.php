@@ -27,9 +27,9 @@ class Book
     #[ORM\Id, ORM\Column, ORM\GeneratedValue]
      private ?int $id = null;
 
-     /** The ISBN of this book (or null if doesn't have one). */
-    #[ORM\Column(nullable: true)]
-     public ?string $isbn = null;
+     /** The ISBN of this book. */
+    #[ORM\Column]
+     public string $isbn = '';
 
      /** The title of this book. */
     #[ORM\Column]

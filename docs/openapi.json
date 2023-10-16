@@ -794,8 +794,7 @@
                         "type": "integer"
                     },
                     "isbn": {
-                        "type": "string",
-                        "nullable": true
+                        "type": "string"
                     },
                     "title": {
                         "type": "string"
@@ -864,8 +863,7 @@
                         "type": "integer"
                     },
                     "isbn": {
-                        "type": "string",
-                        "nullable": true
+                        "type": "string"
                     },
                     "title": {
                         "type": "string"
