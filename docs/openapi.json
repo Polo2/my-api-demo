@@ -344,39 +344,6 @@
                 },
                 "deprecated": false
             },
-            "delete": {
-                "operationId": "api_books_id_delete",
-                "tags": [
-                    "Book"
-                ],
-                "responses": {
-                    "204": {
-                        "description": "Book resource deleted"
-                    },
-                    "404": {
-                        "description": "Resource not found"
-                    }
-                },
-                "summary": "Removes the Book resource.",
-                "description": "Removes the Book resource.",
-                "parameters": [
-                    {
-                        "name": "id",
-                        "in": "path",
-                        "description": "Book identifier",
-                        "required": true,
-                        "deprecated": false,
-                        "allowEmptyValue": false,
-                        "schema": {
-                            "type": "string"
-                        },
-                        "style": "simple",
-                        "explode": false,
-                        "allowReserved": false
-                    }
-                ],
-                "deprecated": false
-            },
             "parameters": []
         },
         "/reviews": {
@@ -709,6 +676,39 @@
                     },
                     "required": true
                 },
+                "deprecated": false
+            },
+            "delete": {
+                "operationId": "api_reviews_id_delete",
+                "tags": [
+                    "Review"
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Review resource deleted"
+                    },
+                    "404": {
+                        "description": "Resource not found"
+                    }
+                },
+                "summary": "Removes the Review resource.",
+                "description": "Removes the Review resource.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Review identifier",
+                        "required": true,
+                        "deprecated": false,
+                        "allowEmptyValue": false,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "style": "simple",
+                        "explode": false,
+                        "allowReserved": false
+                    }
+                ],
                 "deprecated": false
             },
             "patch": {
