@@ -905,7 +905,8 @@
                         "type": "string"
                     },
                     "author": {
-                        "type": "string"
+                        "type": "string",
+                        "nullable": true
                     },
                     "publicationDate": {
                         "type": "string",
@@ -969,7 +970,8 @@
                         "type": "string"
                     },
                     "author": {
-                        "type": "string"
+                        "type": "string",
+                        "nullable": true
                     },
                     "publicationDate": {
                         "type": "string",

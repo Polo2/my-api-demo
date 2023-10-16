@@ -34,9 +34,9 @@ class Review
     #[ORM\Column(type: 'text')]
     public string $body = '';
 
-    /** The author of the review. */
-    #[ORM\Column]
-    public string $author = '';
+    /** The author of the review (or null if comment is anonymous) */
+    #[ORM\Column(nullable: true)]
+    public ?string $author = null;
 
     /** The date of publication of this review.*/
     #[ORM\Column]
